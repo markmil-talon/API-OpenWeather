@@ -1,0 +1,113 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body,
+html {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url("images/weather-img.jpg");
+   background-size: cover;
+   background-position: center;
+   min-height: 720px;
+}
+
+#div-container {
+   /* From https://css.glass */
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 1);
+   padding: 10px 10px 10px 10px;
+   width: 25%;
+   //  display: flex;
+   //   justify-content: center;
+   //   margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+   #div-container {
+      width: 60%
+   }
+}
+
+@media (min-width: 767.98px) {
+   #div-container {
+      width: 60%
+   }
+}
+
+@media (min-width: 991.98px) {
+   #div-container {
+      width: 50%
+   }
+}
+
+@media (min-width: 1200px) {
+   #div-container {
+      width: 40%
+   }
+}
+
+@media (min-width: 1399.98px) {
+   #div-container {
+      width: 30%
+   }
+}
+
+@media (min-width: 1800px) {
+   #div-container {
+      width: 25%
+   }
+}
+
+// @media (max-width: 576px) {
+//    #div-container {
+//       width: 60%
+//    }
+// }
+
+// @media (min-width: 768px) {
+//    #div-container {
+//       width: 40%
+//    }
+// }
+
+// @media (min-width: 992px) {
+//    #div-container {
+//       width: 25%
+//    }
+// }
+
+// @media (min-width: 1200px) {
+//    #div-container {
+//       width: 20%
+//    }
+// }
+
+
+
+// @include media-breakpoint-up(sm) {
+//    #div-container {
+//       width: 85%
+//    }
+// }
+
+// @include media-breakpoint-down(sm) {
+//    #div-container {
+//       width: 60%
+//    }
+// }
+
+// @include media-breakpoint-up(sm) {
+//    #div-container {
+//       width: 40%
+//    }
+// }
